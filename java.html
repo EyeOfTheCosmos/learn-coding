@@ -42,4 +42,37 @@ Now, you can use these variables in your code. In this example, we print them ou
 </p>
 classes and methods will be discussed later, along with other aspects of this code. For now, all you need to know is that.
 </p>
+<h3 id="header">3. Classes & Methods</h3>
+    <p>This one is gonna be a long one. 
+        <br>Classes can be used to create objects, which can use methods defined by the class. A Class is used to define an object that will be used for repeated purposes.
+        <br>For example, a Plant class can be made in a gardening program, and you make Plant objects with that class.
+        <br>Here is how you make a class:
+        <p id="code">public class ClassName{
+            <br>//put code here
+            <br>}
+        </p>
+        In a class, you can have private variables, which can only be accessed in that class. They are defined by having a "private"  keyword in front of that variable.
+    <p id="code">public class Plant{
+        <br>    private String plantName;
+        <br>    private int daysOld;
+        <br>    private double length;
+        <br>    private boolean isFlower;
+        <br>}
+    </p>
+    When you make a private variable, they can either be initialized when you create it, just like you would any other variable.
+    <br>You can also initialize it using a constructor:
+    <p id="code">public class Plant{
+    <br>    private String plantName;
+    <br>    public Plant(){
+    <br>        plantName = "grass";
+    <br>    }
+    <br>    public Plant(String p){
+    <br>        plantName = p;
+    <br>    }
+    <br>}</p>
+    A constructor is called depending on how you create an object, which will be talked about later.
+    <br>There are 2 types of constructors shown here, a default constructor, and just a constructor.
+    <br>A default constructor takes no parameters, and always intitializes the variables with the same values.
+    <br>A constructor that takes in parameters, which you put in the parentheses, uses those values to initialize private variables 
+    </p>
 </body>
