@@ -9,15 +9,22 @@
 <h1>Java</h1>
 <h3 id="header">1. Variables</h3>
 <p>Variables are the backbone of most coding languages. In Java, there are 5 types of variables:
-<br>int: int stands for integer, and can store a number from -2,147,483,648 to 2,147,483,647. This limit is because ints are 32 bits, so it can only store a certain value, and 2,147,483,647 happens to be that value for 32 bits.
-<br>double: double is a decimal value, and it pretty similar to an int.
+<br>int: int stands for integer, and can store a number. The class Integer is a replacement for int, which will be spoken about later.
+<br>double: double is a decimal value, and it pretty similar to an int. The class version of double is Double.
 <br>String: a String is a word, and is declared using quotations ("").
+<br>String has multiple methods to get information about its value. These methods are:
+<br>length(), returns the int length of the String, "apple".length() would return 5.
+<br>substring(int to, int from), returns a String portion of a given String's to and from values. "apple".substring(0,3) would return "app".
+<br>indexOf(String str), returns the index of a given String. "apple".indexOf("p") would return 1.
+<br>equals(String other), returns whether or not the Strings are equal. "apple".equals("apple") would return true, but "apple".equals("banana") would return false.
+<br>this.compareTo(String other), returns -1 if the first letter of this comes after other alphabetically. "apple".compareTo("banana") would return -1, and "banana".compareTo("apple") would return 1.
 <br>boolean: a boolean is holds a true or false value, and is commonly used for "if statements".
 <br>char: a char is like a String, except it uses single quotes instead (''). It stores a single character.
+<br>Please note that while doing math in Java, PEMDAS still applies.
 <h4 id="header">How to declare a variable:</h4>
 <p>To declare a variable, you first have to state what type it is. Here are examples:</p>
-<p id="code">int myInt = 5;
-    <br>double myDouble = 5.0;
+<p id="code">int myInt = 5; Integer myInt = 5;
+    <br>double myDouble = 5.0; Double myDouble = 5.0;
     <br>String myString = "Hello World!";
     <br>boolean myBoolean = true;
     <br>char myChar = 'a';
